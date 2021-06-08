@@ -12,8 +12,8 @@ class Authors
     self.class.get('/api/v1/Authors')
   end
 
-  def post_author(author)
-    self.class.post('/api/v1/Authors', body: author.to_json)
+  def post_author
+    self.class.post('/api/v1/Authors', body: { "id": 8888, "idbook": 8888, "firstname": 'exemplo 88', "lastname": 'teste 88' }.to_json)
   end
 
   def delete_author(id)
