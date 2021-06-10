@@ -3,8 +3,9 @@ Entao('os autores sao o do livro consultado') do
 end
 
 Entao('os dados do autor cadastrado estao conforme informado') do
-  expect(@response['id']).to eq(@author.id)
-  expect(@response['idBook']).to eq(@author.id)
-  expect(@response['firstName']).to eq(@author.id)
-  expect(@response['lastName']).to eq(@author.id)
+  author = @services.author
+  expect(@response['ID']).to eq(author.id)
+  expect(@response['IDBook']).to eq(author.idbook)
+  expect(@response['FirstName']).to eq(author.firstname)
+  expect(@response['LastName']).to eq(author.lastname)
 end

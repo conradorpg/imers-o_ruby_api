@@ -6,4 +6,8 @@ class Services
   def books
     Books.new
   end
+
+  def author
+    Author.new
+  end
 end
