@@ -1,0 +1,14 @@
+AllCops:
+  NewCops: disable
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Naming/AccessorMethodName:
+  Enabled: false
+
+Layout/LineLength:
+  Enabled: false

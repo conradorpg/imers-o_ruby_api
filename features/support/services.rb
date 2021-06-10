@@ -1,3 +1,9 @@
-# frozen_string_literal: true
+class Services
+  def authors
+    Authors.new
+  end
 
-class Services end
+  def books
+    Books.new
+  end
+end
